@@ -9,13 +9,17 @@ public class CasoList
     //Crear un campo que represente una lista de alumnos (List<>)
     List<string> alumnos = new List<string>();
     //Incluir un método para agregar alumnos a la lista
-    public void AgregarAlumno(string alumno)
+    public void AgregarAlumno(string alumnos)
     {
-        alumnos.Add(alumno);
+        this.alumnos.Add(alumnos);
     }
     //Incluir un método para retornar la lista
-        public List<string> ObtenerAlumnos()
+    public List<string> ObtenerAlumnos()
     {
+        /*foreach (var alu in alumnos)
+        {
+            Console.WriteLine(alu);
+        }*/
         return alumnos;
     }
     //Incluir un método para buscar un alumno por nombre
